@@ -33,11 +33,8 @@ public class PlayerMovement_2D : MonoBehaviour
         Animate();
 
         //Sets the idle to the last direction moved
-        if (Input.GetAxis("Horizontal") >= 0.1f || Input.GetAxis("Horizontal") <= -0.1f || Input.GetAxis("Vertical") >= 0.1f || Input.GetAxis("Vertical") <= -0.1f)
-        {
-            animator.SetFloat("LastMoveX", Input.GetAxis("Horizontal"));
-            animator.SetFloat("LastMoveY", Input.GetAxis("Vertical"));
-        }
+        
+        
 
 
     }
